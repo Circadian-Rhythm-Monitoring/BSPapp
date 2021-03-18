@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Circadian Rhythm Monitoring"
