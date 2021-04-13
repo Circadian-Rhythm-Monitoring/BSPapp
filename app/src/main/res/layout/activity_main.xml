@@ -7,37 +7,50 @@
     android:onClick="outputMessage"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/outputTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="176dp"
-        android:layout_marginTop="200dp"
-        android:text="Hello World!"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonEnter" />
-
-    <EditText
-        android:id="@+id/editTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
-        android:layout_marginEnd="100dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Please Enter Your Name"
+    <Button
+        android:id="@+id/buttonEnter"
+        android:layout_width="147dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="116dp"
+        android:onClick="gainOptFilterDyn"
+        android:text="Start"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonEnter"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="156dp"
-        android:onClick="outputMessage"
-        android:text="Enter"
+        android:layout_marginEnd="32dp"
+        android:text="Gain Opt Filter Dynamics Test "
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEnter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextPersonName" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <TextView
+        android:id="@+id/textViewOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="72dp"
+        android:text="Ouput: 0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEnter" />
+
+    <TextView
+        android:id="@+id/textViewRuntime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="28dp"
+        android:text="RunTime: 0 seconds"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOutput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

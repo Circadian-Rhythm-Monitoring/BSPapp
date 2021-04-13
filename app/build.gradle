@@ -13,12 +13,22 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        python {
+//            buildPython "C:/Python38/python.exe"
+            pip {
+                install "numpy"
+                install "mat4py"
+                install "scipy"
+//                install "scipy.io"
+            }
+        }
 
         ndk {
             abiFilters "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
         }
+
 
     }
 
